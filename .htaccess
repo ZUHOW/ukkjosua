@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Aturan umum untuk mendukung clean URL
+    RewriteRule ^(.*)$ public/index.php?page=$1 [L,QSA]
+</IfModule>
